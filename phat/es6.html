@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //es6
+        // const x = (x,y) => x * y;
+        // const x2 = (x,y) => {
+        //     return x*y
+        // }
+        // console.log(x(4,7))
+        // console.log(x2(3,4))
+
+        // const l = (a,b) => a ** b;
+        // console.log(l(3,7))
+
+        ///toan tu spread
+        // const cars1 = ["a", "b", "c"];
+        // const cars2 = ["x", "y", ...cars1];
+        // const cars3 = ["x", "y", cars1];
+        // console.log(cars2)
+        // console.log(cars3)
+
+        const arr1 =[1,2,3,4,5];
+        const arr2 =[6,7];
+        const arr3 =[...arr1, ...arr2];
+        // console.log(Math.max(...arr3));
+
+        //for/of
+        // for(let x of arr3 ){
+        //     console.log(x);
+        // }
+
+        // for(let x of arr3.keys()){
+        //     console.log(x);
+        // }
+
+        // for(let x of arr3.values() ){
+        //     console.log(x);
+        // }
+
+        // for(let x of arr3.entries() ){
+        //     console.log(x);
+        // }
+
+        const student = {
+            name: 'Le A',
+            old: '20',
+            class: 'fit',
+            id: '1'
+        };
+        // console.log(Object.keys(student))
+        // console.log(Object.values(student))
+
+        let str="";
+        for(let x of Object.keys(student)){
+            str+=`${x}: ${student[x]},`;
+        }
+        console.log(str)
+        let ss="";
+        for(let x of Object.entries(student)){
+            ss+=`${x[0]} : ${x[1]},`;
+        }
+        console.log(ss)
+
+
+        // const a=2;
+        // const b=5;
+        // let kq="so a =" + a + "va so b = " + b;
+        // console.log(kq)
+
+        // let kq2= `so a = ${a} va so b= ${b}`;
+        // console.log(kq2)
+    </script>
+
+
+</body>
+</html>

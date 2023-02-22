@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <main>
+        <section id="section-hero" class="section-hero">
+          <div></div>
+        </section>
+
+        <section id="section-about" class="section-about">
+          <div class="container">
+            <img src="./images/tablesetting2.jpg" alt="" />
+            <h2>Our Menu</h2>
+            <div></div>
+          </div>
+        </section>
+
+        <section id="section-menu" class="section-menu">
+          <div class="container">
+            <h2>Our Menu</h2>
+            <div></div>
+            <img src="./images/tablesetting.jpg" alt="" />
+          </div>
+        </section>
+
+        <section id="section-contact" class="section-contact">
+          <h2>Contact</h2>
+          <div></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // lay tat ca cac the image
+        $('img')
+        // lay section co class la section-contact
+        $('section-contact')
+        // lay section co id la section-menu
+        $('#section-menu')
+        // lay tat ca cac h2 ben trong section
+        $('section h2')
+        // lay tat ca cac h2 o trong section 1 cap
+        $('section>h2')
+        alert("Doom Fully Loaded!");
+      });
+    </script>
+  </body>
+</html>

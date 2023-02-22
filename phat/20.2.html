@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr = [1,2,3,4,5,6,7,8,9,10]
+        // const b = arr.filter((item) =>{
+        //     return item % 2 === 0
+        // })
+        // console.log(b)
+
+        // const c = arr.find((item) => {
+        //     return item % 2 === 0
+        // })
+        // console.log(c)
+
+        // const user = { name: 'kha', email: 'kha@gmail.com', phone: '12345', gender: 'male'}
+        // const { name, ...params} = user
+        // console.log(params)
+
+        // let user = { name: 'kha', email: 'kha@gmail.com', phone: '12345', gender: 'male'}
+        // const newname = 'Phat'
+
+        // const a = {
+        //     ...user,
+        //     name: newname
+        // }
+
+        // console.log(a)
+
+        // const funcE = (newuser) => {
+        //     return newuser.newname
+        // }
+
+        // funcE({
+        //     ...user,
+        //     name: newname
+        // })
+
+
+        // const user = {
+        //     name: "Phat",
+        //     email: "12345@gmail.com",
+        //     phone: "9999",
+        //     gender: "male",
+        // };
+
+        // const funcD = (newUser) => {
+        //     return `${newUser.email} + ${newUser.phone}`;
+        // };
+
+        // console.log(funcD({
+        //     ...user,
+        //     email: '45678@gmail.com',
+        //     phone: '8888'
+        // }));
+
+
+        // const funcE = ({email, phone}) => {
+        //     return `${email} + ${phone}`;
+        // };
+
+        // console.log(funcE({
+        //     ...user,
+        //     email: '45678@gmail.com',
+        //     phone: '8888'
+        // }));
+
+
+        // //cách 1
+        // const student ={
+        //     name: "Phat",
+        //     email: "phat@gmail.com",
+        //     score: 0
+        // }
+
+        // const chamdiem = (newscore) => {
+        //     return `${newscore.name} + ${newscore.email} + ${newscore.score}`
+        // }
+
+        // console.log(chamdiem({
+        //     ...student,
+        //     score: '8'
+        // }))
+
+        // console.log(chamdiem({
+        //     ...student,
+        //     score: '9'
+        // }))
+
+        // console.log(chamdiem({
+        //     ...student,
+        //     score: '10'
+        // }))
+
+        // //cách 2
+        // const chamdiem1 = ({ name, score}) => {
+        //     return `Diem cua hoc sinh ${name} la ${score}`
+        // }
+
+        // console.log(chamdiem1({
+        //     ...student,
+        //     score: 8
+        // }))
+        // console.log(chamdiem1({
+        //     ...student,
+        //     score: 9
+        // }))
+        // console.log(chamdiem1({
+        //     ...student,
+        //     score: 10
+        // }))
+
+
+
+        // // bt 2
+
+        // const students =[]
+
+        // const addstudent = ({ name, email}) => {
+        //     return{
+
+        //     }
+        // }
+
+        // const studentA = add
+
+        const user1 = {
+            name: "Phat",
+            email: "12345@gmail.com",
+            phone: "9999",
+            gender: "male",
+        };
+        const student1 = {
+            studentId:'12345',
+            score: 10
+        }
+
+        const funcE = (newuser, newstudent) => {
+            return `${newuser.name} + ${newstudent.studentId}`
+        }
+
+        const funcF = ({name}, {studentId}) => {
+            return `Hoc Sinh ${name} có mã số ${studenId}`
+        }
+
+        console.log(funcF({
+            ...user1,
+            name:"phat",
+            studentId:'456789'
+        }))
+    </script>
+</body>
+</html>

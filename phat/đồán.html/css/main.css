@@ -1,0 +1,137 @@
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 80vh;
+    background: url("https://tf.quomodosoft.com/appie/wp-content/uploads/2022/02/down1-_-bg.png");
+}
+#banner .info{
+    font-family: "Roboto",Sans-serif;
+    line-height: 20px;
+    text-align: center;
+}
+#banner .info h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+#banner .info p{
+    text-align: center;
+    color: #FFFFFF8A;
+    font-family: "Roboto",Sans-serif;
+    font-weight: 400;
+}
+#banner .video{
+    display: flex;
+    align-items: center;
+}
+#banner .video .get{
+    font-family: "Roboto",Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    fill: #ff6b58;
+    color: #ff6b58;
+    background-color: #61CE7000;
+    border: solid 1px #ff6b58;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    transition: 1s;
+    margin-right: 20px;
+    
+}
+#banner .video .get:hover{
+    color: #fff;
+    background-color: #ff6b58;
+    
+}
+#banner .video .icon{
+    background: #ff6b58;
+    border: none;
+    font-size: 22px;
+    margin-right: 20px;
+    color:#fff;
+    border-radius: 50%;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    justify-content: center;
+    text-align: center;
+}
+#banner .video .icon::before{
+    background-color: #ff6b58;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .4;
+    animation: show 1s linear 2s infinite;
+}
+@keyframes show{
+    100%{scale: 1.8; opacity: 0.1;}
+    0%{scale:1; opacity: 0.5;}
+}
+#banner .img{
+    margin-top: 100px;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+}
+#content .title{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content .title h1{
+    color: #0e1133;
+    font-family: "Roboto",Sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 54px;
+}
+#content .title p{
+    text-align: center;
+    color: #505056;
+    font-family: "Roboto",Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.row{
+    display: flex;
+    text-align: center;
+    padding: 0% 20%;
+}
+.row .info h1{
+    color: #2c234d;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    color: #0e1133;
+    font-size: 25px;
+}
+.row .info h2{
+    color: #505056;
+    font-family: "Roboto",Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.row .info p{
+    font-family: "Roboto",Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: gray
+}

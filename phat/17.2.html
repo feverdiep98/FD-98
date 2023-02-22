@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arry = [1,2,3,4,5,6,7,8];
+        arry.forEach(x => {
+            console.log(x)
+        });
+
+        for(let i=0; i<arry.length;i++){
+            console.log(arry[i])
+        }
+
+        // console.log chẵn và lẻ
+
+        const a = prompt("Enter a number: ");
+        if(a % 2 === 0){
+            console.log("a là số chẵn")
+        }
+        else{
+            console.log("a là số lẻ")
+        }
+
+        
+        const funcA = (a) => {
+            return a*a;
+        }
+        console.log(funcA(4))
+        
+        const status = 'active'; 'draft'; 'inactive'
+        const funcB = (status) => {
+            switch(status){
+                case 'active':
+                    return 3;
+                case 'draft':
+                    return 2;
+                case 'inactive':
+                    return 1;
+                default:
+                    return 0;
+            }
+        }
+        console.log(funcB('active'))
+
+        // const funcC = (a, ...params) => {
+        //     let data = []
+        //     for(let i=0; i<params.length;i++){
+        //         data [i] = params[i] * 2
+        //     }
+        //     return [a,...data]
+        // } //cách 1
+
+        const funcC = (a, ...params) => {
+            const data = params.map((item) => {
+                return item*3
+            })
+            return [a,...data]
+        } //cách 2
+
+        console.log(funcC(1,2,3,4,5,6,7,8,9,10))
+    </script>
+</body>
+</html>
